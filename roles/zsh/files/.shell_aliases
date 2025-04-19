@@ -14,3 +14,30 @@ alias proxy_on='export http_proxy=http://localhost:8080; export https_proxy=http
 alias proxy_tor_on='export http_proxy=socks5://localhost:9050; export https_proxy=socks5://localhost:9050'
 alias proxy_status="env | grep -i 'http_proxy\|https_proxy'"
 alias proxy_off='unset http_proxy; unset https_proxy'
+
+alias la='ls -lAFh'
+
+alias grep='grep --color'
+alias sgrep='grep -R -n -H -C 5 --exclude-dir={.git,.svn,CVS}'
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias cd..='cd ..'
+alias cd-='cd -'
+
+# List archive contents as default action
+alias -s zip='unzip -l'
+alias -s rar='unrar l'
+alias -s tar='tar tf'
+alias -s tar.gz='tar tzf'
+alias -s tar.bz2='tar tjf'
+alias -s tar.xz='tar tJf'
+alias -s tar.zsd='tar -I zstd -tf'
+alias -s ace='unace l'
+alias -s 7z='7z l'

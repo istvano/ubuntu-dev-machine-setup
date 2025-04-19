@@ -132,12 +132,6 @@
     force_apt_get: true
 
 - block:
-    - name: accept licence for virtualbox ext pack
-      debconf:
-        name: "virtualbox-ext-pack"
-        question: "virtualbox-ext-pack/license"
-        value: "true"
-        vtype: "select"
 
     - name: install virtualization tools
       ansible.builtin.apt:
