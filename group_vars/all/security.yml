@@ -9,5 +9,11 @@ security_packages:
   - firejail
   - apparmor-profiles
   - apparmor-utils
+  - checkov
+  - trivy
+  - semgrep
+  - gitleaks
+  - lynis
+  - tcpdump
 
 ...

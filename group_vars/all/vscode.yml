@@ -6,6 +6,7 @@ vscode_apt_key_keyring: "/etc/apt/trusted.gpg.d/microsoft.gpg"
 
 vscode_extensions:
   - EditorConfig.EditorConfig
+  - github.copilot
   - github.vscode-github-actions
   - ldez.ignore-files
   - eamodio.gitlens
