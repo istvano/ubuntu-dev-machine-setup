@@ -103,7 +103,6 @@ base_developer_tools:
   - python3-poetry
   - ranger
   - rclone
-  - iconv
   - remmina
   - rename
   - ripgrep  # launch using rg from the cli
