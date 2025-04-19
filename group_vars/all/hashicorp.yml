@@ -8,8 +8,5 @@ hashicorp_packages:
   - vagrant
   - terraform
   - packer
-  - tflint
-  - tfsec
-  - hadolint
 
 ...
