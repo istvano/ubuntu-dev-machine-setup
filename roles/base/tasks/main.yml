@@ -90,13 +90,6 @@
     state: present
     force_apt_get: true
 
-- name: install developer tools pipx packages
-  community.general.pipx:
-    name: "{{ item }}"
-  with_items: "{{ base_developer_tools_pipx  }}"
-  become: true
-  become_user: "{{ local_username  }}"
-
 # Fix for bat syntax highlighting tool; Ubuntu packages it as batcat instead of just bat
 - name: create symlink for bat
   ansible.builtin.file:
