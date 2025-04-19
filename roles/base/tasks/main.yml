@@ -146,14 +146,6 @@
         force_apt_get: true
         update_cache: true
 
-    # add user to docker group to run docker commands without sudo
-    - name: add user to docker and vboxusers groups
-      ansible.builtin.user:
-        name: "{{ local_username }}"
-        append: true
-        groups:
-          - docker
-
 # - name: Enable permanent night light settings
 #   ansible.builtin.command: "gsettings set org.gnome.settings-daemon.plugins.color {{ item.key }} {{ item.value }}"
 #   loop:
