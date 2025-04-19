@@ -10,22 +10,10 @@
     - name: copy systemd file (2/5)
       ansible.builtin.copy:
         src: /usr/share/systemd/tmp.mount
-        dest: /lib/systemd/system/tmp.mount
+        dest: /etc/systemd/system
         remote_src: True
 
-    - name: create dir /etc/systemd/system/tmp.mount.d (3/5)
-      ansible.builtin.file:
-        path: /etc/systemd/system/tmp.mount.d
-        state: directory
-
-    - name: create tmp.mount custom options file (4/5)
-      ansible.builtin.copy:
-        dest: /etc/systemd/system/tmp.mount.d/options.conf
-        content: |
-          [Mount]
-          Options=mode=1777,strictatime,nosuid,nodev,size=1024M
-
-    - name: start and enable tmp.mount on boot (5/5)
+    - name: start and enable tmp.mount
       ansible.builtin.systemd:
         name: tmp.mount
         enabled: true
