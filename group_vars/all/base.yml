@@ -48,7 +48,6 @@ base_developer_tools:
   - ripgrep
   - zoxide
   - ranger
-  - starship
   - tmux
   - tmuxp
   - bpython
