@@ -59,6 +59,7 @@ base_developer_tools:
   - clusterssh
   - csvkit
   - curl
+  - pipx
   - openjdk-17-jre-headless
   - dos2unix
   - duf  # Disk Usage/Free Utility
