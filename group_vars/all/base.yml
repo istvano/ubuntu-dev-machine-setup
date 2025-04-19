@@ -92,7 +92,6 @@ base_developer_tools:
   - pandoc
   - parallel
   - pcre2-utils  # provides pcre2grep and pcre2test (perl-compatible regex)
-  - pipx
   - pssh
   - ptpython
   - pv
