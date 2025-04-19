@@ -2,7 +2,6 @@
 
 neovim_apt_packages:
   - neovim
-  - luarocks
   - fd-find
   - tree-sitter-cli
 

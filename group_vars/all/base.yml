@@ -1,7 +1,6 @@
 ---
 
 base_archiving_tools:
-  - file-roller
   - p7zip-full
   - p7zip-rar
   - rar

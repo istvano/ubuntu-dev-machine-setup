@@ -7,9 +7,6 @@ This repo contains Ansible playbooks to configure your system as a development m
 The playbooks should run in Debian based system with minor modifications but was only tested with:
 
 - **Ubuntu 24.04 LTS (Noble Numbat)**
-- **Linux Mint 22 (Wilma)**
-
-For other versions of Ubuntu, change to the other branches of this git repo.
 
 ![bullet-train-zsh-theme](.images/screenshot-bullet-train.png)
 
@@ -32,7 +29,6 @@ I am a DevSecOps Engineer and my daily job include working with AWS, docker, ans
 Summary of packages that get installed and configured based on roles:
 
 - **role: base**
-  - mount `/tmp` on tmpfs (reduce SSD read writes and increase SSD lifespan; no leftover files on system shutdown)
   - set default system editor to vim instead of nano
   - enable ufw firewall and install ufw graphical frontend gufw
   - disable system crash reports
@@ -43,16 +39,13 @@ Summary of packages that get installed and configured based on roles:
   - install foliate, an e-book reader
   - install glow, apostrophe and Obsidian markdown editors
   - install dive, a tool for exploring each layer in a docker image
-  - install power management tools like [TLP](https://github.com/linrunner/TLP)
-  - install development related packages like android-tools, awscli, httpie, clusterssh, docker, filezilla, golang, pipenv, etc
+  - install development related packages like httpie, clusterssh, docker, filezilla, golang, pipenv, etc
   - install nala, an alternative package management tool to apt/apt-get
   - install code fomatters and linters like black, ruff, ansible-lint, etc
   - setup golang directories
   - install download tools like axel, transmission, wget, aria2
   - install image, audio and video packages like vlc, totem, gimp, imagemagick, etc
-  - install virtualization tools like virtualbox, docker, docker-compose
-  - install and configure ssh server if not set to `laptop_mode`
-  - option to turn on night light settings for eye comfort (set `base_permanent_night_light.night_light_enabled` to `True`)
+  - install virtualization tools
   - enable `fzf` fuzzy finder in zsh terminal; check out this [YouTube video](https://www.youtube.com/watch?v=1a5NiMhqAR0) to see how to use it
   - install terminal emulators Tilix
   - install [lazygit](https://github.com/jesseduffield/lazygit)
@@ -84,14 +77,6 @@ Summary of packages that get installed and configured based on roles:
   - add Visual Studio Code apt repo
   - install Visual Studio Code
   - install some popular Visual Studio Code extensions
-- **role: privacy**
-  - install tor
-  - configure tor to run at boot and prevent using certain countries as exit nodes
-    - edit `/etc/tor/torrc` if necessary
-  - install proxychains
-  - configure proxychains to use tor. View [my Medium story](https://fazlearefin.medium.com/tunneling-traffic-over-tor-network-using-proxychains-34c77ec32c0f) to see how to use it
-    - edit `/etc/proxychains4.conf` if necessary
-  - install metadata anonymization toolkit
 - **role: security**
   - install ClamAV (antivirus) and ClamAV GNOME interface. Manual scan from nautilus or from CLI using `clamscan`; clamd not installed for its huge memory footprint
   - install firejail for sanboxing applications
@@ -111,15 +96,15 @@ On the system which you are going to setup using Ansible, perform these steps.
 You need to install `ansible` and `git` before running the playbooks. You can either install it using `pip` or `apt`.
 
 ```bash
-/usr/bin/sudo apt update
-/usr/bin/sudo apt full-upgrade -y
-/usr/bin/sudo apt install ansible git -y
+sudo apt update
+sudo apt full-upgrade -y
+sudo apt install ansible git -y
 ```
 
 And clone this repo (do not clone in `/tmp` as this dir is cleaned and mounted in tmpfs)
 
 ```bash
-git clone https://github.com/fazlearefin/ubuntu-dev-machine-setup.git
+git clone https://github.com/istvano/ubuntu-dev-machine-setup.git
 cd ubuntu-dev-machine-setup
 ```
 
@@ -137,15 +122,6 @@ The `main.yml` playbook will take anything from 15 minutes to an hour to complet
 
 After all is done, give your laptop a new life by rebooting.
 
-> ### What is this `laptop_mode`?
-
-#### Setting this to `True`
-
-- will install some packages like [TLP](https://github.com/linrunner/TLP) for battery economy
-
-#### Setting this to `False`
-
-- will NOT install some packages like [TLP](https://github.com/linrunner/TLP) for battery economy
 
 ---
 
@@ -157,15 +133,3 @@ After all is done, give your laptop a new life by rebooting.
 - When launching the terminal, having some [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) plugins like **docker** enabled results in the error: `tee: <snip> No such file or directory`. You can easily fix this by creating the missing directory manually: `mkdir -p ~/.antigen/bundles/robbyrussell/oh-my-zsh/cache/completions`.
 
 ---
-
-## Pull Requests and Forks
-
-You are more than welcome to send any pull requests. However, the intention of this repo is to suit my development needs. So it might be better if you *fork* this repo instead for your own needs and personalization.
-
----
-
-## Donations
-
-If you think my work helped you in some way saving you time and effort, I am happy to receive any amount of donation. However, the code in this repo is completely free; absolutely *no strings attached*.
-
-Bitcoin (BTC): `bc1qzlhpm94vtk2ht67etdutzcy2g5an5v6g36tp0m`
