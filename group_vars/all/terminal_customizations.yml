@@ -2,10 +2,7 @@
 
 # nerd fonts from https://github.com/ryanoasis/nerd-fonts
 terminal_customizations_nerd_fonts:
-  - https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/CascadiaCode/Bold/CaskaydiaCoveNerdFontMono-BoldItalic.ttf    # don't remove; alacritty config uses this
-  - https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/CascadiaCode/Bold/CaskaydiaCoveNerdFontMono-Bold.ttf          # don't remove; alacritty config uses this
-  - https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/CascadiaCode/Regular/CaskaydiaCoveNerdFontMono-Italic.ttf     # don't remove; alacritty config uses this
-  - https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/CascadiaCode/Regular/CaskaydiaCoveNerdFontMono-Regular.ttf    # don't remove; alacritty config uses this
+  
   - https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/FiraCode/Bold/FiraCodeNerdFontMono-Bold.ttf
   - https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/FiraCode/Regular/FiraCodeNerdFontMono-Regular.ttf             # don't remove; tilix profile uses this
   - https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/JetBrainsMono/Ligatures/BoldItalic/JetBrainsMonoNerdFontMono-BoldItalic.ttf
@@ -20,6 +17,14 @@ terminal_customizations_nerd_fonts:
   - https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/SourceCodePro/SauceCodeProNerdFontMono-Bold.ttf
   - https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/SourceCodePro/SauceCodeProNerdFontMono-Italic.ttf
   - https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/SourceCodePro/SauceCodeProNerdFontMono-Regular.ttf
+  - https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/RobotoMono/Bold-Italic/RobotoMonoNerdFontMono-BoldItalic.ttf
+  - https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/RobotoMono/Bold/RobotoMonoNerdFontMono-Bold.ttf
+  - https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/RobotoMono/Italic/RobotoMonoNerdFontMono-Italic.ttf
+  - https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/RobotoMono/Regular/RobotoMonoNerdFontMono-Regular.ttf
+  - https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DejaVuSansMono/Bold-Italic/DejaVuSansMNerdFontMono-BoldOblique.ttf
+  - https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DejaVuSansMono/Bold/DejaVuSansMNerdFontMono-Bold.ttf
+  - https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DejaVuSansMono/Italic/DejaVuSansMNerdFontMono-Oblique.ttf
+  - https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DejaVuSansMono/Regular/DejaVuSansMNerdFontMono-Regular.ttf
   - https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/VictorMono/Bold-Italic/VictorMonoNerdFontMono-BoldItalic.ttf
   - https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/VictorMono/Bold/VictorMonoNerdFontMono-Bold.ttf
   - https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/VictorMono/Italic/VictorMonoNerdFontMono-Italic.ttf
