@@ -1,24 +1,24 @@
 ---
 
 # mount /tmp on tmpfs
-- block:
-    - name: clear the existing /tmp dir (1/5)
-      ansible.builtin.shell: "/bin/rm -rf *"
-      args:
-        chdir: /tmp
+# - block:
+#     - name: clear the existing /tmp dir (1/5)
+#       ansible.builtin.shell: "/bin/rm -rf *"
+#       args:
+#         chdir: /tmp
 
-    - name: copy systemd file (2/5)
-      ansible.builtin.copy:
-        src: /usr/share/systemd/tmp.mount
-        dest: /etc/systemd/system
-        remote_src: True
+#     - name: copy systemd file (2/5)
+#       ansible.builtin.copy:
+#         src: /usr/share/systemd/tmp.mount
+#         dest: /etc/systemd/system
+#         remote_src: True
 
-    - name: start and enable tmp.mount
-      ansible.builtin.systemd:
-        name: tmp.mount
-        enabled: true
-        state: started
-        daemon_reload: true
+#     - name: start and enable tmp.mount
+#       ansible.builtin.systemd:
+#         name: tmp.mount
+#         enabled: true
+#         state: started
+#         daemon_reload: true
 
 - name: enable ufw firewall
   community.general.ufw:
