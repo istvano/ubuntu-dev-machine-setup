@@ -9,7 +9,7 @@ The playbooks should run in Debian based system with minor modifications but was
 - **Ubuntu 24.04 LTS (Noble Numbat)**
 - **Linux Mint 22 (Wilma)**
 
-For other versions of Ubuntu, change to the other branches of this git repo. Other versions include Ubuntu 18.04 LTS, 20.04 LTS, 22.04 LTS.
+For other versions of Ubuntu, change to the other branches of this git repo.
 
 ![bullet-train-zsh-theme](.images/screenshot-bullet-train.png)
 

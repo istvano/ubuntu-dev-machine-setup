@@ -1,7 +1,6 @@
 ---
 
 base_archiving_tools:
-  - arj
   - cabextract
   - file-roller
   - mpack
@@ -19,6 +18,7 @@ base_productivity_tools:
   - libreoffice
   - foliate
   - qalc
+  - copyq
 
 base_system_tools:
   - fatrace
@@ -28,9 +28,11 @@ base_system_tools:
   - nala    # alternative package management tool to apt/apt-get
   - progress
   - pwgen
-#  - syncthing
+  - syncthing
   - qemu-utils
   - trash-cli  # command line tools to interact with files/directories in rubbish bin
+  - smartmontools
+  - nvme-cli
 
 base_system_tools_laptop:
 #  - cpufrequtils
@@ -47,12 +49,10 @@ base_download_tools:
   - speedtest-cli
   - wget
   - yt-dlp
+  - grsync
 
 base_developer_tools:
-  - 2to3
   - alacritty  # OpenGL terminal emulator
-  - android-tools-adb
-  - android-tools-fastboot
   - ansible
   - ansible-lint
   - apostrophe
@@ -64,6 +64,7 @@ base_developer_tools:
   - bpython
   - black
   - btop  # Modern and colorful command line resource monitor that shows usage and stats
+  - ca-certificates
   - cargo
   - cloc
   - clusterssh
@@ -92,6 +93,7 @@ base_developer_tools:
   - jq
   - kwalify
   - makeself
+  - make
   - meld
   - miller
   - moreutils
@@ -109,8 +111,6 @@ base_developer_tools:
   - pry
   - pssh
   - ptpython
-  #- puppet
-  #- puppet-lint
   - pv
   - pylint
   - python3-cachecontrol
@@ -125,8 +125,6 @@ base_developer_tools:
   - remmina
   - rename
   - ripgrep  # launch using rg from the cli
-  - ruby
-  - ruby-dev
   - shellcheck
   - siege
   - socat
@@ -164,7 +162,7 @@ base_media_tools:
   - mediainfo
   - soundconverter
   - totem
-#  - ubuntu-restricted-extras
+  - ubuntu-restricted-extras
   - vlc
 
 golang_tools:
@@ -177,12 +175,12 @@ rust_cargo_tools:
   - tlrc  # tldr client
   - xh  # drop-in replacement for httpie/http
 
-base_permanent_night_light:
-  night_light_enabled: false              # set this to true for permanently turning on night light
-  night_light_schedule_automatic: false
-  night_light_schedule_from: 0
-  night_light_schedule_to: 24
-  night_light_temperature: 4200
+# base_permanent_night_light:
+#   night_light_enabled: false              # set this to true for permanently turning on night light
+#   night_light_schedule_automatic: false
+#   night_light_schedule_from: 0
+#   night_light_schedule_to: 24
+#   night_light_temperature: 4200
 
 base_obsidian_download_base_url: "https://api.github.com/repos/obsidianmd/obsidian-releases/releases/latest"
 

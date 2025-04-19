@@ -183,18 +183,18 @@
           - docker
           - vboxusers
 
-- name: Enable permanent night light settings
-  ansible.builtin.command: "gsettings set org.gnome.settings-daemon.plugins.color {{ item.key }} {{ item.value }}"
-  loop:
-    - { key: 'night-light-enabled', value: "{{ base_permanent_night_light.night_light_enabled | string | lower }}" }
-    - { key: 'night-light-schedule-automatic', value: "{{ base_permanent_night_light.night_light_schedule_automatic | string | lower }}" }
-    - { key: 'night-light-schedule-from', value: "{{ base_permanent_night_light.night_light_schedule_from }}" }
-    - { key: 'night-light-schedule-to', value: "{{ base_permanent_night_light.night_light_schedule_to }}" }
-    - { key: 'night-light-temperature', value: "{{ base_permanent_night_light.night_light_temperature }}" }
+# - name: Enable permanent night light settings
+#   ansible.builtin.command: "gsettings set org.gnome.settings-daemon.plugins.color {{ item.key }} {{ item.value }}"
+#   loop:
+#     - { key: 'night-light-enabled', value: "{{ base_permanent_night_light.night_light_enabled | string | lower }}" }
+#     - { key: 'night-light-schedule-automatic', value: "{{ base_permanent_night_light.night_light_schedule_automatic | string | lower }}" }
+#     - { key: 'night-light-schedule-from', value: "{{ base_permanent_night_light.night_light_schedule_from }}" }
+#     - { key: 'night-light-schedule-to', value: "{{ base_permanent_night_light.night_light_schedule_to }}" }
+#     - { key: 'night-light-temperature', value: "{{ base_permanent_night_light.night_light_temperature }}" }
 
-  when: base_permanent_night_light.night_light_enabled
-  become: true
-  become_user: "{{ local_username }}"
+#   when: base_permanent_night_light.night_light_enabled
+#   become: true
+#   become_user: "{{ local_username }}"
 
 # make fstrim run daily rather than the default weekly schedule for SSD longevity
 - block:
