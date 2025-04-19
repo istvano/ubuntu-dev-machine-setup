@@ -17,7 +17,6 @@ base_productivity_tools:
 
 base_system_tools:
   - fatrace
-  - fd
   - fdupes
   - gnome-calculator
   - gufw
