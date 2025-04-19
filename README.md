@@ -54,8 +54,7 @@ Summary of packages that get installed and configured based on roles:
   - install and configure ssh server if not set to `laptop_mode`
   - option to turn on night light settings for eye comfort (set `base_permanent_night_light.night_light_enabled` to `True`)
   - enable `fzf` fuzzy finder in zsh terminal; check out this [YouTube video](https://www.youtube.com/watch?v=1a5NiMhqAR0) to see how to use it
-  - install terminal emulators Tilix and Alacritty
-    - Alacritty will have tmux enabled by default (edit `~/.config/alacritty/alacritty.toml` to disable)
+  - install terminal emulators Tilix
   - install [lazygit](https://github.com/jesseduffield/lazygit)
 - **role: zsh**
   - install zsh package and set user shell to zsh
@@ -68,7 +67,6 @@ Summary of packages that get installed and configured based on roles:
 - **role: terminal_customizations**
   - download and install some nerd fonts from ryanoasis/nerd-fonts; these are mono fonts ideal for use in terminal or programming editors
   - copy and enable sample tilix config file with configured nerd font
-  - copy sample alacritty config file
   - copy and enable sample tmux config file if one does not exist
   - copy and enable sample `~/.tmux.conf` file with [tmux plugin manager](https://github.com/tmux-plugins/tpm) and several tmux plugins
     - open Tilix terminal and run `tmux` command, or enable custom command option in Tilix

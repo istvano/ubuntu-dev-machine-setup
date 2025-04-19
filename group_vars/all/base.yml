@@ -39,7 +39,6 @@ base_download_tools:
   - grsync
 
 base_developer_tools:
-  - alacritty  # OpenGL terminal emulator
   - ansible
   - ansible-lint
   - apostrophe
@@ -47,10 +46,8 @@ base_developer_tools:
   - fzf
   - ripgrep
   - zoxide
-  - ranger
   - tmux
   - tmuxp
-  - bpython
   - black
   - btop  # Modern and colorful command line resource monitor that shows usage and stats
   - ca-certificates
@@ -78,7 +75,6 @@ base_developer_tools:
   - htop
   - httpie
   - inotify-tools
-  - ipython3
   - jq
   - make
   - meld
@@ -94,14 +90,12 @@ base_developer_tools:
   - parallel
   - pcre2-utils  # provides pcre2grep and pcre2test (perl-compatible regex)
   - pssh
-  - ptpython
   - pv
   - pylint
   - python3-cachecontrol
   - python3-jmespath
   - python3-pip
   - python3-poetry
-  - ranger
   - rclone
   - remmina
   - rename
@@ -110,18 +104,14 @@ base_developer_tools:
   - siege
   - socat
   - sshfs
-  - sshpass
   - sshuttle
   - stow  # symlink manager
-  - tcptraceroute  # traceroute implementation using TCP packets
   - tig
   - tilix  # A tiling terminal emulator for Linux using GTK+ 3
   - tmux
-  - tmuxp
   - tree
   - xsel
   - yamllint
-  - zeal
 
 base_virtualization_tools:
   - virt-manager

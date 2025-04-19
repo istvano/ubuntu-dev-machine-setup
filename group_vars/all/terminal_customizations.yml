@@ -32,6 +32,4 @@ terminal_customizations_nerd_fonts:
 
 terminal_customizations_tmux_plugin_repo: "https://github.com/tmux-plugins/tpm"
 
-terminal_customizations_alacritty_themes_repo: "https://github.com/alacritty/alacritty-theme"
-
 ...
