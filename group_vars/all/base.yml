@@ -39,7 +39,6 @@ base_download_tools:
   - grsync
 
 base_developer_tools:
-  - act
   - alacritty  # OpenGL terminal emulator
   - ansible
   - ansible-lint
